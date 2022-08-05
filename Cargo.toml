@@ -1,0 +1,11 @@
+[package]
+name = "charx"
+description = "A replacement for char::is_ascii*"
+version = "1.0.0"
+edition = "2021"
+license = "0BSD"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]

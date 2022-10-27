@@ -5,7 +5,16 @@ version = "1.0.0"
 edition = "2021"
 license = "0BSD"
 readme = "README.md"
+rust-version = "1.56.0"
+repository = "https://github.com/AliSajid/charx"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "charx"
+path = "src/lib.rs"
+crate-type = ["staticlib", "dylib", "lib"]
+
+
 
 [dependencies]

@@ -1,10 +1,14 @@
 # A replacement for char
 
-![crates.io](https://img.shields.io/crates/v/charx.svg)
-![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/AliSajid/charx)
 [![Continuous integration](https://github.com/AliSajid/charx/actions/workflows/ci.yaml/badge.svg)](https://github.com/AliSajid/charx/actions/workflows/ci.yaml)
+![crates.io](https://img.shields.io/crates/v/charx.svg)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/release/AliSajid/charx)
 ![Crates.io](https://img.shields.io/crates/l/charx)
+
 [![Contribute with Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/#AliSajid/charx)
+[![Code of Conduct: Contributor Covenant](https://img.shields.io/badge/code_of_conduct-contributor_covenant-14cc21)](https://github.com/EthicalSource/contributor_covenant)
+
+
 
 This crate provides a replacement for the `char` type that is more ergonomic to use.
 

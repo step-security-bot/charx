@@ -1,5 +1,4 @@
-A replacement for char
-======================
+# A replacement for char
 
 Because Rust's `char::is_ascii*` family of functions takes `&self`, it's
 impossible to use them as patterns. This is inconsistent with the rest of

@@ -36,37 +36,37 @@
 //! ```
 
 macro_rules! charx_fn {
-    ($funcname:ident) => {
-        #[doc=concat!("Same as [`char::", stringify!($funcname), "`] but takes `char` instead of `&char`.")]
+    ($name:ident) => {
+        #[doc=concat!("Same as [`char::", stringify!($name), "`] but takes `char` instead of `&char`.")]
         ///
         /// # Examples
         ///
         /// This doesn't compile:
         ///
         /// ```rust compile_fail
-        #[doc=concat!("\"hello\".trim_start_matches(char::", stringify!($funcname), ");")]
+        #[doc=concat!("\"hello\".trim_start_matches(char::", stringify!($name), ");")]
         /// ```
         ///
         /// But this does:
         ///
         /// ```rust
-        #[doc=concat!("\"hello\".trim_start_matches(charx::", stringify!($funcname), ");")]
+        #[doc=concat!("\"hello\".trim_start_matches(charx::", stringify!($name), ");")]
         /// ```
         #[inline(always)]
-        pub fn $funcname(ch: char) -> bool {
-            char::$funcname(&ch)
+        pub fn $name(ch: char) -> bool {
+            char::$name(&ch)
         }
-        mod $funcname {
+        mod $name {
             #[test]
             fn test() {
                 for ch in '\0'..='\u{10FFFF}' {
-                    assert_eq!(char::$funcname(&ch), crate::$funcname(ch));
+                    assert_eq!(char::$name(&ch), crate::$name(ch));
                 }
             }
         }
     };
-    ($($funcname:ident)*) => {
-        $(charx_fn!($funcname);)*
+    ($($name:ident)*) => {
+        $(charx_fn!($name);)*
     };
 }
 

@@ -2,7 +2,7 @@
 
 ![crates.io](https://img.shields.io/crates/v/charx.svg)
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/AliSajid/charx)
-[![Continuous integration](https://github.com/AliSajid/charx/actions/workflows/ci.yaml/badge.svg?branch=main&event=push)](https://github.com/AliSajid/charx/actions/workflows/ci.yaml)
+[![Continuous integration](https://github.com/AliSajid/charx/actions/workflows/ci.yaml/badge.svg)](https://github.com/AliSajid/charx/actions/workflows/ci.yaml)
 ![Crates.io](https://img.shields.io/crates/l/charx)
 [![Contribute with Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/#AliSajid/charx)
 

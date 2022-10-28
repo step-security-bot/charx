@@ -30,9 +30,9 @@ lto = false
 
 [profile.release]
 codegen-units = 1
-opt-level = 's'
+opt-level = 3
 debug = false
 debug-assertions = false
-strip = 'true'
+strip = true
 overflow-checks = true
 lto = true

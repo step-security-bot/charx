@@ -15,6 +15,24 @@ name = "charx"
 path = "src/lib.rs"
 crate-type = ["staticlib", "dylib", "lib"]
 
-
-
 [dependencies]
+
+[build]
+jobs = 1
+incremental = true
+
+[profile.dev]
+opt-level = 0
+debug = true
+debug-assertions = true
+overflow-checks = true
+lto = false
+
+[profile.release]
+codegen-units = 1
+opt-level = 's'
+debug = false
+debug-assertions = false
+strip = 'true'
+overflow-checks = true
+lto = true

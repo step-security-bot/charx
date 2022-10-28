@@ -53,8 +53,8 @@ macro_rules! charx_fn {
         #[doc=concat!("\"hello\".trim_start_matches(charx::", stringify!($name), ");")]
         /// ```
         #[inline(always)]
-        pub fn $name(character: char) -> bool {
-            char::$name(&character)
+        pub fn $name(c: char) -> bool {
+            char::$name(&c)
         }
         mod $name {
             #[test]

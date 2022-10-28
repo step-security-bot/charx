@@ -53,14 +53,14 @@ macro_rules! charx_fn {
         #[doc=concat!("\"hello\".trim_start_matches(charx::", stringify!($name), ");")]
         /// ```
         #[inline(always)]
-        pub fn $name(c: char) -> bool {
-            char::$name(&c)
+        pub fn $name(ch: char) -> bool {
+            char::$name(&ch)
         }
         mod $name {
             #[test]
             fn test() {
-                for c in '\0'..='\u{10FFFF}' {
-                    assert_eq!(char::$name(&c), crate::$name(c));
+                for ch in '\0'..='\u{10FFFF}' {
+                    assert_eq!(char::$name(&ch), crate::$name(ch));
                 }
             }
         }

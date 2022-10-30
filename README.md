@@ -1,7 +1,7 @@
 # A replacement for char
 
 [![Continuous integration](https://github.com/AliSajid/charx/actions/workflows/ci.yaml/badge.svg)](https://github.com/AliSajid/charx/actions/workflows/ci.yaml)
-![crates.io](https://img.shields.io/crates/v/charx.svg)
+![crates.io package](https://img.shields.io/crates/v/charx.svg)
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/release/AliSajid/charx)
 ![Crates.io](https://img.shields.io/crates/l/charx)
 

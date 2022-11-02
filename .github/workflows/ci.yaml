@@ -81,7 +81,7 @@ jobs:
           args: -- -D warnings
 
       - name: Wait before badge creation
-        run: sleep $(shuf -i 1-5 -n 1)
+        run: seq 5 | sort -R | head -n1 | xargs sleep
 
       - name: Create Awesome Badge - Success
         uses: schneegans/dynamic-badges-action@v1.4.0
@@ -166,7 +166,7 @@ jobs:
           args: -- -D warnings
 
       - name: Wait before badge creation
-        run: sleep $(shuf -i 1-5 -n 1)
+        run:  seq 5 | sort -R | head -n1 | xargs sleep
 
       - name: Create Awesome Badge - Success
         uses: schneegans/dynamic-badges-action@v1.4.0
@@ -251,7 +251,7 @@ jobs:
           args: -- -D warnings
 
       - name: Wait before badge creation
-        run: sleep $(shuf -i 1-5 -n 1)
+        run:  seq 5 | sort -R | head -n1 | xargs sleep
 
       - name: Create Awesome Badge - Success
         uses: schneegans/dynamic-badges-action@v1.4.0

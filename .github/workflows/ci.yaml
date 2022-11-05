@@ -81,7 +81,7 @@ jobs:
           args: -- -D warnings
 
       - name: Wait before badge creation
-        uses: AliSajid/random-wait-action@v1
+        uses: AliSajid/random-wait-action@v1.1.0
         with:
           minimum: 1
           maximum: 5
@@ -169,7 +169,7 @@ jobs:
           args: -- -D warnings
 
       - name: Wait before badge creation
-        uses: AliSajid/random-wait-action@v1
+        uses: AliSajid/random-wait-action@v1.1.0
         with:
           minimum: 1
           maximum: 5
@@ -257,7 +257,7 @@ jobs:
           args: -- -D warnings
 
       - name: Wait before badge creation
-        uses: AliSajid/random-wait-action@v1
+        uses: AliSajid/random-wait-action@v1.1.0
         with:
           minimum: 1
           maximum: 5

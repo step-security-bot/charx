@@ -23,6 +23,8 @@ env:
 jobs:
   windows-ci:
     runs-on: ${{ matrix.os }}-latest
+    outputs:
+      result: ${{steps.result.outputs.result}}
     strategy:
       matrix:
         rust:
@@ -116,6 +118,8 @@ jobs:
 
   ubuntu-ci:
     runs-on: ${{ matrix.os }}-latest
+    outputs:
+      result: ${{steps.result.outputs.result}}
     strategy:
       matrix:
         rust:
@@ -209,6 +213,8 @@ jobs:
 
   macos-ci:
     runs-on: ${{ matrix.os }}-latest
+    outputs:
+      result: ${{steps.result.outputs.result}}
     strategy:
       matrix:
         rust:

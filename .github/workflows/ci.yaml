@@ -109,6 +109,11 @@ jobs:
           label: Build
           message: Failed
           isError: true
+
+      - name: Set Result
+        if: always()
+        run: echo "result=${{ success() }}" >> $GITHUB_OUTPUT
+
   ubuntu-ci:
     runs-on: ${{ matrix.os }}-latest
     strategy:
@@ -197,6 +202,11 @@ jobs:
           label: Build
           message: Failed
           isError: true
+
+      - name: Set Result
+        if: always()
+        run: echo "result=${{ success() }}" >> $GITHUB_OUTPUT
+
   macos-ci:
     runs-on: ${{ matrix.os }}-latest
     strategy:
@@ -285,3 +295,14 @@ jobs:
           label: Build
           message: Failed
           isError: true
+
+      - name: Set Result
+        if: always()
+        run: echo "result=${{ success() }}" >> $GITHUB_OUTPUT
+
+  semantic-release:
+    runs-on: ubuntu-latest
+    if: jobs.macos-ci.outputs.result == 'success' && jobs.windows-ci.outputs.result == 'success' && jobs.ubuntu-ci.outputs.result == 'success'
+    needs: [macos-ci, windows-ci, ubuntu-ci]
+    steps:
+      - uses: ./.github/workflows/release.yaml

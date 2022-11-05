@@ -1,12 +1,6 @@
-on:
-  push:
-    branches:
-      - main
-      - alpha
-      - beta
+on: workflow_call
 
-
-name: Release
+name: Semantic Release
 
 env:
   RUST_BACKTRACE: 1

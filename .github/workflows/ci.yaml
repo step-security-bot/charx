@@ -81,7 +81,10 @@ jobs:
           args: -- -D warnings
 
       - name: Wait before badge creation
-        run: seq 5 | sort -R | head -n1 | xargs sleep
+        uses: AliSajid/random-wait-action@v1
+        with:
+          minimum: 1
+          maximum: 5
 
       - name: Create Awesome Badge - Success
         uses: schneegans/dynamic-badges-action@v1.4.0
@@ -166,7 +169,10 @@ jobs:
           args: -- -D warnings
 
       - name: Wait before badge creation
-        run:  seq 5 | sort -R | head -n1 | xargs sleep
+        uses: AliSajid/random-wait-action@v1
+        with:
+          minimum: 1
+          maximum: 5
 
       - name: Create Awesome Badge - Success
         uses: schneegans/dynamic-badges-action@v1.4.0
@@ -251,7 +257,10 @@ jobs:
           args: -- -D warnings
 
       - name: Wait before badge creation
-        run:  seq 5 | sort -R | head -n1 | xargs sleep
+        uses: AliSajid/random-wait-action@v1
+        with:
+          minimum: 1
+          maximum: 5
 
       - name: Create Awesome Badge - Success
         uses: schneegans/dynamic-badges-action@v1.4.0

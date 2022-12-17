@@ -19,6 +19,8 @@ concurrency:
 env:
   GIST_KEY: "d52f912107d7609656370db9d741596c" # pragma: allowlist secret
   RUST_BACKTRACE: 1
+  MINIMUM_WAIT: 2
+  MAXIMUM_WAIT: 5
 
 jobs:
   windows-ci:
@@ -84,6 +86,9 @@ jobs:
 
       - name: Wait before badge creation
         uses: AliSajid/random-wait-action@v1.1.0
+        with:
+          minimum: ${{ env.MINIMUM_WAIT }}
+          maximum: ${{ env.MAXIMUM_WAIT }}
 
       - name: Create Awesome Badge - Success
         uses: schneegans/dynamic-badges-action@v1.4.0
@@ -176,6 +181,9 @@ jobs:
 
       - name: Wait before badge creation
         uses: AliSajid/random-wait-action@v1.1.0
+        with:
+          minimum: ${{ env.MINIMUM_WAIT }}
+          maximum: ${{ env.MAXIMUM_WAIT }}
 
       - name: Create Awesome Badge - Success
         uses: schneegans/dynamic-badges-action@v1.4.0
@@ -268,6 +276,9 @@ jobs:
 
       - name: Wait before badge creation
         uses: AliSajid/random-wait-action@v1.1.0
+        with:
+          minimum: ${{ env.MINIMUM_WAIT }}
+          maximum: ${{ env.MAXIMUM_WAIT }}
 
       - name: Create Awesome Badge - Success
         uses: schneegans/dynamic-badges-action@v1.4.0

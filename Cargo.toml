@@ -5,7 +5,7 @@
 [package]
 name = "charx"
 description = "A replacement for char::is_ascii*"
-version = "1.1.0-next.1"
+version = "1.1.0"
 edition = "2021"
 license = "0BSD"
 readme = "README.md"

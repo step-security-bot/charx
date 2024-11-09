@@ -13,7 +13,6 @@ SPDX-License-Identifier: CC0-1.0
 ![Crates.io](https://img.shields.io/crates/l/charx)
 [![REUSE status](https://api.reuse.software/badge/github.com/AliSajid/brainfoamkit)](https://api.reuse.software/info/github.com/AliSajid/brainfoamkit)
 
-[![Contribute with Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/AliSajid/charx)
 [![Code of Conduct: Contributor Covenant](https://img.shields.io/badge/code_of_conduct-contributor_covenant-14cc21)](https://github.com/EthicalSource/contributor_covenant)
 
 This crate provides a replacement for the `char` type that is more ergonomic to use.
@@ -37,6 +36,3 @@ This crate provides `char`-taking variants of the `is_ascii*` family of function
 ## Contributing
 
 While this is a single crate with a single focus, We're happy to accept contributions. Pull Requests are welcome. Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-You can also use the link below to open an IDE in the cloud to contribute to this project.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/AliSajid/charx)

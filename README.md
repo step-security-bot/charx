@@ -1,8 +1,8 @@
 <!--
-SPDX-FileCopyrightText: 2022 - 2024 Soni L.
 SPDX-FileCopyrightText: 2022 - 2024 Ali Sajid Imami
+SPDX-FileCopyrightText: 2022 - 2024 Soni L.
 
-SPDX-License-Identifier: CC0-1.0
+SPDX-License-Identifier: 0BSD
 -->
 
 # A replacement for char
